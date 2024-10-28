@@ -1,10 +1,5 @@
 name: Custom test
-on:
-  push:
-    branches:
-      - staging
-      - 'fix/**'
-      - 'feature/**'
+on: [push, pull_request]
 jobs:
   lint:
     runs-on: ubuntu-latest
